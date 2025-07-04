@@ -1,0 +1,112 @@
+/* LIMPANDO FORMATAÇÕES */
+
+*{
+ margin:0;
+ padding:0;
+}
+
+/* DEFINIDO DISPLAY*/
+
+.container{
+    display: grid;
+}
+
+.corpo{
+    grid-template-columns: 250px auto ;
+    padding:15px 60px;
+
+}
+
+/* CONFIGURANDO ELELMENTOS BASE*/
+
+header{
+    background-color: gray;
+    padding: 15px 60px 5px 60px;
+    height: 135px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:3;
+    align-items: center;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+footer{
+    background-color: gray;
+    padding: 5px 60px 15px 60px;
+    height: 135px;
+    width: 100%;
+    position: fixed; 
+    bottom: 0px; 
+    left: 0px;
+    align-items: center;
+    clear: both;
+    text-align: center;
+}
+/* CONFIGURANDO CABEÇALHO */
+
+.titulo{
+    text-align: right;
+    font-size: 70px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* CONFIGURANDO MENU */
+
+.menu{
+    border: solid blue;
+    padding: 10px 0px 10px 10px;
+    margin: 5px 0px;
+    grid-column: 2;
+    grid-row: 2;
+    justify-items: right;
+    align-content: center;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu a, a:link {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background-color: #ccc;
+}
+
+/* CONFIGURANDO CARD PESSOAL*/
+
+.pessoal{
+    border: solid green;
+    padding: 10px;
+    grid-column: 1;
+    justify-items: center;
+}
+
+.ft{
+    border-radius: 100px;
+    grid-column: 1;
+    padding-bottom: 15px;
+}
+
+/* CONFIGURANDO CORPO DA PÁGINA */
+.info{
+    border: solid red;
+    padding: 10px;
+    grid-column: 2;
+    justify-items: right;
+    text-align:justify;
+}

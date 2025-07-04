@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;    
+}
+
+body{
+    margin: 0 auto;
+}
+header{
+    background: url(imgs/vecteezy_electrician-engineer-wi.jpg) no-repeat top;
+    height: 600px;  
+    top: 0;
+}
+
+.img-center{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 200;
+    height: 200;
+}
+
+
+
+ul, li{
+    width: 300px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    background-color: red;
+}
+
+li, a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 8px 16px;
+}
+
+.titulo{
+    font-size: 5rem;
+    color: rgb(255, 16, 16);
+
+}
+
+.menu-orcamento{
+    background-color: black;
+    padding: 0 auto;
+}
+
+.aside1{
+    top: 450px;
+    float: right;
+    width: 25%;
+    padding: 20px;
+}
+
+.section1{
+    float: left;
+    width: 75%;
+    padding: 20px;
+}
+
+.fundo-preto{
+    background: url(notuno.png) no-repeat center;
+    background-color: #000;
+    height: 234px;
+    clear: both;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.servicos {
+    background-color: #e88a0b;
+    border-radius: 25px;
+    width: 216px;
+    height: 254px;
+    display: inline-flex;
+    color: white;
+    padding: 20px;
+}

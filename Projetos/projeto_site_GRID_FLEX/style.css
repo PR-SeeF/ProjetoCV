@@ -1,0 +1,111 @@
+/* LIMPANDO FORMATAÇÕES */
+
+*{
+ margin:0;
+ padding:0;
+}
+
+body{
+    margin: 0;
+}
+
+
+.container{
+    display: grid;
+}
+
+header{
+    grid-column-start:1;
+    grid-column-end: 12;
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+    border: solid;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    float: left;
+    margin: 5px;
+}
+
+a, a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: black;
+}
+a:hover {
+    background-color: beige;
+}
+
+ footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: beige;
+    text-align: center;
+    padding: 15px;
+}
+
+.menu{    
+    grid-column-start: 4;
+    grid-column-end: 8;
+    justify-content: center;
+    gap: 10px;  
+}
+
+.imagemLeo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+    
+}
+.corpo{
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+.galeria{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    padding-bottom: 15px;
+    border: 2px;
+    border-radius: 10px;
+
+}
+
+.img {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.img img {
+    width: auto;
+    height: 450px;
+}
+
+@media only screen and (max-width: 767px) {
+    .tamanhoJanela {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .imagenLeo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .corpo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+
