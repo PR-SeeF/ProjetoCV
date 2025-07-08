@@ -19,10 +19,16 @@
 
 /* CONFIGURANDO ELELMENTOS BASE*/
 
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
 header{
     background-color: gray;
     padding: 15px 60px 5px 60px;
-    height: 135px;
+    height: 165px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -37,21 +43,19 @@ img{
 
 footer{
     background-color: gray;
-    padding: 5px 60px 15px 60px;
-    height: 135px;
-    width: 100%;
-    position: fixed; 
-    bottom: 0px; 
-    left: 0px;
-    align-items: center;
     clear: both;
     text-align: center;
+    padding: 15px;
+    bottom: 0%;
 }
+
+
+
 /* CONFIGURANDO CABEÇALHO */
 
 .titulo{
     text-align: right;
-    font-size: 70px;
+    font-size: 75px;
     grid-column: 2;
     grid-row: 1;
 }
@@ -59,7 +63,6 @@ footer{
 /* CONFIGURANDO MENU */
 
 .menu{
-    border: solid blue;
     padding: 10px 0px 10px 10px;
     margin: 5px 0px;
     grid-column: 2;
@@ -90,10 +93,19 @@ footer{
 /* CONFIGURANDO CARD PESSOAL*/
 
 .pessoal{
-    border: solid green;
     padding: 10px;
     grid-column: 1;
     justify-items: center;
+    text-align: center;
+}
+
+.pessoal h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.pessoal p{
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .ft{
@@ -103,10 +115,63 @@ footer{
 }
 
 /* CONFIGURANDO CORPO DA PÁGINA */
+
 .info{
-    border: solid red;
+    padding: 10px 10px 10px 150px;
+    grid-column: 2;
+    justify-items:right;
+    text-align: right;
+}
+.info h1{
+    font-size: 75px;
+    margin-bottom: 35px;
+} 
+.info h3{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.info p{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.info ul{
+    list-style: none;
+    padding: 0;
+}
+.info li{
+    margin: 25px 0px;
+}
+
+.info a, a:link {
+    text-decoration: none;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    font-size: 35px;
+}
+.info a:hover {
+    background-color: #ccc;
+}
+
+/* CONFIGURANDO FORMULÁRIO */
+
+.form{
     padding: 10px;
     grid-column: 2;
-    justify-items: right;
-    text-align:justify;
+    justify-items: right;   
+    text-align: right;
+    box-sizing: border-box;
+    
 }
+.form h1{
+    font-size: 75px;
+    margin-bottom: 35px;
+}
+.form input, .form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
